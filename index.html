@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - SOUTECH PCM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload=" carregarAlertas(); carregarResumo();">
+<header>
+  <img src="https://i.postimg.cc/LnyN2jrB/soutech-logo-sem-fundo.png" alt="SOUTECH Logo">
+</header>
+<div class="sidebar" id="sidebar">
+  <a href="index.html">🏠 Dashboard</a>
+  <a href="equipamentos.html">🏭 Equipamentos</a>
+  <a href="planos.html">📋 Planos de Manutenção</a>
+  <a href="ordens.html">🛠️ Ordens de Serviço</a>
+  <a href="historico.html">📜 Histórico</a>
+  <a href="relatorios.html">📈 Relatórios</a>
+</div>
+<div class="content">
+  <h1>Bem-vindo à Plataforma PCM, <span id="user"></span>!</h1>
+
+  <section id="resumo" style="margin-bottom:30px;">
+    <h2>📊 Resumo Rápido</h2>
+    <div class="cards-resumo">
+      <div class="card-resumo" id="card-equipamentos">🏭 Equipamentos<br><span>0</span></div>
+      <div class="card-resumo" id="card-planos">📋 Planos<br><span>0</span></div>
+      <div class="card-resumo" id="card-os-abertas">🛠️ OS Abertas<br><span>0</span></div>
+      <div class="card-resumo" id="card-os-concluidas">📜 OS Concluídas<br><span>0</span></div>
+      <div class="card-resumo" id="card-alertas">⚠️ Alertas<br><span>0</span></div>
+    </div>
+  </section>
+
+  <section id="alertas" style="margin-bottom:30px;">
+    <h2>⚠️ Alertas de Manutenção</h2>
+    <div id="alerta-lista"></div>
+  </section>
+
+  <h2>Menu Principal</h2>
+  <div class="services">
+    <div class="card"><h3>🏭 Equipamentos</h3><p>Cadastro e gestão de ativos.</p></div>
+    <div class="card"><h3>📋 Planos</h3><p>Planejamento de manutenções preventivas.</p></div>
+    <div class="card"><h3>🛠️ Ordens de Serviço</h3><p>Gerenciamento de OS abertas e concluídas.</p></div>
+    <div class="card"><h3>📜 Histórico</h3><p>Histórico de manutenções realizadas.</p></div>
+    <div class="card"><h3>📈 Relatórios</h3><p>KPIs de manutenção e gráficos.</p></div>
+  </div>
+</div>
+<script src="script.js"></script>
+<script src="alertas.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

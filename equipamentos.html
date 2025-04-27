@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equipamentos - SOUTECH PCM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<header><a href="../index.html">🏠 Voltar</a></header>
+<div class="sidebar" id="sidebar">
+    <a href="../index.html">🏠 Dashboard</a>
+    <a href="equipamentos.html">🏭 Equipamentos</a>
+    <a href="planos.html">📋 Planos de Manutenção</a>
+    <a href="ordens.html">🛠️ Ordens de Serviço</a>
+    <a href="historico.html">📜 Histórico</a>
+    <a href="relatorios.html">📈 Relatórios</a>
+</div>
+
+<div class="content">
+<h1>Cadastro de Equipamentos</h1>
+<form id="equip-form">
+    <input type="text" id="nome" placeholder="Nome do Equipamento" required><br>
+    <input type="text" id="tag" placeholder="Tag de Identificação" required><br>
+    <input type="text" id="localizacao" placeholder="Localização" required><br>
+    <input type="text" id="tipo" placeholder="Tipo (Motor, Bomba, etc.)" required><br>
+    <button type="submit">Salvar</button>
+</form>
+<h2>Lista de Equipamentos</h2>
+<ul id="equip-list"></ul>
+</div>
+<script src="equipamentos.js"></script>
+
+<script src="script.js"></script>
+<script src="equipamentos.js"></script>
+
+</body>
+</html>

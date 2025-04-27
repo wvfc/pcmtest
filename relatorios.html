@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios - SOUTECH PCM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+<header>
+  <img src="https://i.postimg.cc/LnyN2jrB/soutech-logo-sem-fundo.png" alt="Logo SOUTECH">
+  <button onclick="exportarRelatorio()" class="logout-button">Exportar PDF</button>
+</header>
+
+<div class="sidebar" id="sidebar">
+  <a href="../index.html">🏠 Dashboard</a>
+  <a href="equipamentos.html">🏭 Equipamentos</a>
+  <a href="planos.html">📋 Planos</a>
+  <a href="ordens.html">🛠️ OS</a>
+  <a href="historico.html">📜 Histórico</a>
+  <a href="relatorios.html" class="active">📈 Relatórios</a>
+</div>
+
+<div class="content" id="relatorio-content">
+  <h1>📈 Relatórios de Manutenção</h1>
+
+  <section class="cards-resumo" style="margin-bottom: 40px;">
+    <div class="card-resumo" id="card-equipamentos">🏭 Equipamentos<br><span>0</span></div>
+    <div class="card-resumo" id="card-planos">📋 Planos<br><span>0</span></div>
+    <div class="card-resumo" id="card-os-abertas">🛠️ OS Abertas<br><span>0</span></div>
+    <div class="card-resumo" id="card-os-concluidas">📜 OS Concluídas<br><span>0</span></div>
+  </section>
+
+  <section style="margin-bottom: 40px;">
+    <h2>📊 Distribuição de Ordens de Serviço</h2>
+    <canvas id="graficoPizza" width="400" height="400"></canvas>
+  </section>
+
+</div>
+
+<script src="relatorios.js"></script>
+</body>
+</html>
